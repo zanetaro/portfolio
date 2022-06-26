@@ -1,0 +1,142 @@
+// 共通パーツ
+.section__title {
+
+  img {
+    width: 120px;
+    height: auto;
+  }
+
+  &-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-en {
+    font-size: 36px;
+    letter-spacing: 0.25rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  &-jp {
+    font-size: 12px;
+  }
+
+  &-jp::before,
+  &-jp::after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 24px;
+    background-color: #0370dd;
+    margin: 0 10px;
+    vertical-align: middle;
+  }
+}
+
+@media (max-width:599px) {
+  .section__title {
+    padding: 0 0 16px 0;
+    margin-bottom: 0;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  .section--title-jp::before,
+  .section--title-jp::after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 12px;
+    background-color: #333;
+    margin: 0 5px;
+    vertical-align: middle;
+  }
+}
+
+.view-more-link {
+  display: block;
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding-bottom: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #333;
+  position: relative;
+
+  span {
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 3px;
+    transform: rotate(45deg);
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+  }
+}
+
+
+@media (max-width:1024px) {
+
+  .view-more-link .view-more-btn {
+    font-size: 16px;
+  }
+
+  .view-more-link span {
+    border-top: 1px solid #333;
+    border-left: none;
+    left: auto;
+    right: 0px;
+  }
+}
+
+.pageTop-btn {
+  width: 50px;
+  height: 50px;
+  margin: 0 0 1px auto;
+  border: 3px solid #0370dd;
+  border-radius: 50%;
+  position: sticky;
+  bottom: 16px;
+  right: 16px;
+  cursor: pointer;
+  opacity: .5;
+  display: none;
+
+  span {
+    display: block;
+    height: 25px;
+    position: absolute;
+    bottom: -1px;
+    left: 22px;
+    border-left: 3px solid #0370dd;
+    transition: .3s;
+
+    &::before {
+      content: "";
+      border-top: #0370dd 8px solid;
+      border-right: transparent 8px solid;
+      border-bottom: transparent 8px solid;
+      border-left: transparent 8px solid;
+      position: absolute;
+      top: 0;
+      left: -11px;
+      transform: rotate(45deg)
+    }
+  }
+}
+
+@media (max-width:1024px) {
+  .pageTop-btn {
+    opacity: 10;
+  }
+}
+
+// 共通パーツ終わり

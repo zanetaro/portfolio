@@ -1,0 +1,44 @@
+.contact-text {
+  margin-top: 40px;
+  line-height: 1.5;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 40px;
+
+  a {
+    display: block;
+    padding: 16px 40px;
+    font-size: 20px;
+    letter-spacing: 0.25rem;
+    background-color: #FFFBEB;
+    box-shadow: 4px 4px 0 #dcd3b7;
+    border-radius: 40px;
+    transition: all .1s;
+
+
+    &:hover {
+      color: black;
+      background-color: #dcd3b7;
+      box-shadow: none;
+    }
+
+    &:active{
+      transform: scale(1.1);
+    }
+  }
+}
+
+
+@media (max-width:599px) {
+  .contact {
+    padding: 0 24px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+
+    &-text {
+      font-size: 14px;
+    }
+  }
+}

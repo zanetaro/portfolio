@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>morizane.site</title>
+  <link rel="icon" href="./img/favicon.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Kiwi+Maru:wght@300;400&family=Murecho:wght@300;400&display=swap"
+    rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <header class="header-left">
+    <a href="https://morizane.site/portfolio/index.html">morizane.site</a>
+  </header>
+
+  <aside class="header-right">
+    <nav class="header-right__navi" style="display: none;">
+      <ul>
+        <li class="header-right__navi-item">
+          <a href="https://morizane.site/portfolio/service.html">service<span></span></a>
+        </li>
+        <li class="header-right__navi-item">
+          <a href="https://morizane.site/portfolio/works.html">works<span></span></a>
+        </li>
+        <li class="header-right__navi-item">
+          <a href="#about">about<span></span></a>
+        </li>
+        <li class="header-right__navi-item">
+          <a href="https://morizane.site/portfolio/contact.html">contact<span></span></a>
+        </li>
+        <li class="header-right__navi-item">
+          <a href="https://morizane.site/portfolio/index.html">home<span></span></a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- ハンバーガー -->
+  <div class="sp-hamburger">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+  <!-- mv -->
+  <div class="mv">
+    <p class="mv__small-text">webサイト制作<span></span>デザイン</p>
+    <h1 class="mv__site-title">morizane<span></span>site</h1>
+    <p class="mv__text">webを通じて人と人とを繋ぐ。<br>
+      そのための課題解決に真摯に取り組みます。
+    </p>
+  </div>
+
+  <main class="main">
+
+    <!-- service -->
+    <section class="service container">
+      <div class="section__title js-scroll-set">
+        <img src="./img/service-title-img.png" class="js-scroll-set-2">
+        <div class="section__title-name">
+          <h2 class="section__title-en">service</h2>
+          <p class="section__title-jp">ご対応</p>
+        </div>
+      </div>
+
+      <ul class="service__cards">
+
+        <li class="service__card">
+          <div class="service__card-title">
+            <p>webサイト/LPの制作</p>
+            <img src="./img/service-card-1.png" alt="">
+          </div>
+          <p class="service__card-text">
+            Wordpressによるオリジナルテーマや既存テーマを用いてコーポレートサイト、ランディングページの制作を行います。<br>
+            制作にあたり事前に目的を細かにヒアリングし、完成後に目指す結果を得られるよう心がけております。
+          </p>
+        </li>
+
+        <li class="service__card">
+          <div class="service__card-title">
+            <p>コーディング</p>
+            <img src="./img/service-card-2.png" alt="">
+          </div>
+          <p class="service__card-text">
+            ご用意頂いたデザインから、そのデザインに至った意図を明確にし、保守性の高さを重視したコーディングを行います。<br>
+            JavaScriptによる動きのあるコーディングも可能です。
+          </p>
+        </li>
+
+        <li class="service__card">
+          <div class="service__card-title">
+            <p>webデザイン</p>
+            <img src="./img/service-card-3.png" alt="">
+          </div>
+          <p class="service__card-text">
+            webページを作りどのような結果を得たいのか、まずはその点をしっかりと把握し、そのあとに目指すゴールに向けたデザインに着手→ご提案いたします。
+          </p>
+        </li>
+      </ul>
+
+      <a class="view-more-link" href="https://morizane.site/portfolio/service.html">
+        <p class="view-more-btn">view more</p>
+        <span></span>
+      </a>
+    </section>
+
+    <!-- works -->
+    <section class="works">
+      <div class="section__title js-scroll-set">
+        <img src="./img/works-title-img.png" class="js-scroll-set-2">
+        <div class="section__title-name">
+          <h2 class="section__title-en">works</h2>
+          <p class="section__title-jp">制作実績</p>
+        </div>
+      </div>
+      <div class="swiper-area">
+        <!-- ネクストアロー -->
+        <span class="swiper-button-next"></span>
+        <!-- スワイパー -->
+        <div class="swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a class="swiper-slide__item" href="https://morizane.site/portfolio/works-detail.html">
+                <div class="swiper-slide__item-img">
+                  <img src="./img/works-img-2.png">
+                </div>
+                <p>FA EXHIBITION</p>
+              </a>
+            </li>
+
+            <li class="swiper-slide">
+              <a class="swiper-slide__item" href="https://morizane.site/portfolio/works-detail.html">
+                <div class="swiper-slide__item-img">
+                  <img src="./img/works-img-1.png">
+                </div>
+                <p>morizane.site</p>
+              </a>
+            </li>
+
+            <li class="swiper-slide">
+              <a class="swiper-slide__item" href="https://morizane.site/portfolio/works-detail.html">
+                <div class="swiper-slide__item-img">
+                  <img src="./img/works-img-3.png">
+                </div>
+                <p>BBB 英会話スクール</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- プレヴューアロー -->
+        <span class="swiper-button-prev"></span>
+      </div>
+      <a class="view-more-link" href="https://morizane.site/portfolio/works.html">
+        <p class="view-more-btn">view more</p>
+        <span></span>
+      </a>
+    </section>
+
+    <!-- about -->
+    <section class="about container" id="about">
+      <div class="section__title js-scroll-set">
+        <img src="./img/about-title-img.png" class="js-scroll-set-2">
+        <div class="section__title-name">
+          <h2 class="section__title-en">about</h2>
+          <p class="section__title-jp">私について</p>
+        </div>
+      </div>
+
+      <div class="about__wrapper js-scroll-set">
+        <div class="about__wrapper-left">
+          <p class="about__wrapper-left-name">yutaro morizane
+            <span>盛實 祐太朗</span>
+          </p>
+          <p class="about__wrapper-left-text">
+            '89年生まれ<br> 神奈川県を拠点にwebサイトの制作/デザインを承っております。
+            <span>
+              業務において、課題を明確に捉え発信者側とユーザーが
+              win-winの関係となる事を心がけております。
+            </span>
+          </p>
+          <p class="about__wrapper-left-skills"> 
+            <span>skills</span> <br>
+            HTML/CSS (SCSS)、JavaScript (jQuery)、WordPressなど
+          </p>
+        </div>
+        <div class="about__wrapper-right">
+          <img class="about__wrapper-right-myimg" src="./img/about-myimg.png">
+          <a class="about__wrapper-right-github" href="#">
+            <img src="./img/github-icon.png" alt="github">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact container">
+      <div class="section__title js-scroll-set">
+        <img src="./img/contact-title-img.png" class="js-scroll-set-2">
+        <div class="section__title-name">
+          <h2 class="section__title-en">contact</h2>
+          <p class="section__title-jp">お問い合わせ</p>
+        </div>
+      </div>
+      <p class="contact-text js-scroll-set">
+        制作・デザインに関するお見積りやご相談事などお気軽にお問い合わせください。<br>
+        2営業日以内にご返信いたします。
+      </p>
+
+      <div class="contact-btn">
+        <a href="https://morizane.site/portfolio/contact.html">contact</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- topボタン -->
+  <div class="pageTop-btn">
+    <span></span>
+  </div>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <p>
+      © morizane.site
+    </p>
+  </footer>
+</body>
+
+</html>
